@@ -1,0 +1,41 @@
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.log_istic"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="17" />
+	
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/log_istic"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".WelcomeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".LogActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_log" >
+        </activity>
+    </application>
+    <uses-permission  android:name = "android.permission.GET_TASKS"/>
+	<uses-permission  android:name = "android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission  android:name = "android.permission.WRITE_EXTERNAL_STORAGE">
+      <group gid="sdcard_rw" />
+      <group gid="media_rw" />
+   </uses-permission>	
+   <uses-permission  android:name = "android.permission.WRITE_INTERNAL_STORAGE"/>
+</manifest>

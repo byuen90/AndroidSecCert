@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/httpAnalyselayout"
+        android:layout_width="match_parent"
+        android:layout_height="600dip"
+        android:layout_marginTop="5dip"
+        android:fillViewport="true"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbars="horizontal|vertical" >
+
+    	<HorizontalScrollView 
+	        android:id="@+id/httpAnalysehorizontalView" 
+	        android:layout_height="wrap_content"     
+	        android:scrollbars="horizontal|vertical" 
+	        android:layout_width="wrap_content"     
+	        android:layout_marginTop="5dip"
+	        android:gravity="center_horizontal">
+	    	<TableLayout 
+			    android:id="@+id/tableLayoutHttpAnalyse"
+			    android:layout_width="wrap_content"
+			    android:layout_marginLeft="5dip"
+			    android:layout_height="wrap_content" 
+	         android:stretchColumns="*" >
+	     	</TableLayout>
+	     </HorizontalScrollView>> 
+	</ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/buttonResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Results" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewShowResults"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

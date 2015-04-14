@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView 
+	    android:id="@+id/httplayout" 
+	    android:layout_height="match_parent"         
+	    android:scrollbars="horizontal|vertical" 
+	    android:layout_width="match_parent"     
+	    android:layout_marginTop="5dip"     
+	    android:scrollbarStyle="outsideInset"
+	    android:fillViewport="true"> 
+
+    	<HorizontalScrollView 
+		        android:id="@+id/httphorizontalView" 
+		        android:layout_height="wrap_content"     
+		        android:scrollbars="horizontal|vertical" 
+		        android:layout_width="wrap_content"     
+		        android:layout_marginTop="5dip"
+		        android:gravity="center_horizontal">
+		    	<TableLayout 
+				    android:id="@+id/tableLayoutHttp"
+				    android:layout_marginLeft="5dip"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content" >
+		     	</TableLayout>
+		</HorizontalScrollView>
+	</ScrollView>     
+
+</LinearLayout>
